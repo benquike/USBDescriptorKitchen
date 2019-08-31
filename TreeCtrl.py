@@ -1,6 +1,6 @@
 import wx
 import copy
-import wx.lib.customtreectrl as CT
+import wx.lib.agw.customtreectrl as CT
 import DescriptorDetailsPanel
 
 class CustomTreeCtrl(CT.CustomTreeCtrl):
