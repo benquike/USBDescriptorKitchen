@@ -117,7 +117,7 @@ class MainFrame(wx.Frame):
 		Check.Check.doCheck(self, self.tree.descriptors)
 
 	def OnDump(self, event):
-		print self.doDump()
+		print(self.doDump())
 
 	def OnFileOpen(self, event):
 		dlg = wx.FileDialog(self, message="Choose a file",

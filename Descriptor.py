@@ -67,7 +67,7 @@ class DescriptorElementClass:
 				key = k
 
 		if not key:
-			print "Ooops ... val %d not in enum %s" % (val, self.name)
+			print("Ooops ... val %d not in enum %s" % (val, self.name))
 
 		return key
 
@@ -472,14 +472,14 @@ class DescriptorClass:
 		return out
 
 	def debugDump(self, indent=""):
-		print indent,
-		print self
-		print indent,
-		print self.descriptorType
+		print(indent)
+		print(self)
+		print(indent)
+		print(self.descriptorType)
 
 		for e in self.elements:
-			print indent + "element %s" % e.name
-			print indent + "value %d" % e.value
+			print(indent + "element %s" % e.name)
+			print(indent + "value %d" % e.value)
 
 		indent += "  "
 		for c in self.children:

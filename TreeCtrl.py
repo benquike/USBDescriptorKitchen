@@ -201,7 +201,7 @@ class CustomTreeCtrl(CT.CustomTreeCtrl):
 		# traverse up to the configuration descriptor
 		configDescriptor = descriptor.iterateUp("Configuration")
 		if not configDescriptor:
-			print "Oops - no config descriptor?"
+			print("Oops - no config descriptor?")
 			return {}
 
 		if element.suggestionType == "EndpointAddress":

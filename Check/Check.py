@@ -1,5 +1,5 @@
 import wx
-import Basic
+from . import Basic
 
 class CheckFrame(wx.Frame):
 	def __init__(self, parent, ID, title, pos=wx.DefaultPosition,
