@@ -124,7 +124,7 @@ class MainFrame(wx.Frame):
 				    defaultDir=os.getcwd(), 
 				    defaultFile="",
 				    wildcard=wildcard,
-				    style=wx.OPEN | wx.CHANGE_DIR)
+				    style=wx.FD_OPEN | wx.FD_CHANGE_DIR)
 
 		if dlg.ShowModal() == wx.ID_OK:
 			paths = dlg.GetPaths()
